@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ReCAST-RL: Reinforcement Learning with Residual Forecasting for Robust Quadruped Locomotion.">
+  <meta name="theme-color" content="#f8faf7">
+  <title>ReCAST-RL: Robust Quadruped Locomotion</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#comparisons">Skip to comparative tests</a>
+
+  <main id="top">
+    <nav class="scene-nav" aria-label="Page guide">
+      <div class="container scene-nav-inner">
+        <a href="#demonstrations">Demonstrations</a>
+        <a href="#low-friction">Low Friction</a>
+        <a href="#slopes">Outdoor Slopes</a>
+        <a href="#payloads">Payloads</a>
+        <a href="#stress-tests">Stress Tests</a>
+      </div>
+    </nav>
+
+    <header class="paper-header container">
+      <h1><span class="project-name">ReCAST-RL:</span> Reinforcement Learning with Residual Forecasting for Robust Quadruped Locomotion</h1>
+      <p class="playback-notice">* All videos are played at 1× speed.</p>
+    </header>
+
+    <section id="demonstrations" class="overview container" aria-label="Simulation and real-world demonstrations">
+      <figure class="overview-video">
+        <div class="overview-label"><h2>01 / Demonstration – Simulation</h2></div>
+        <video class="overview-player" controls muted playsinline preload="metadata" poster="posters/demonstration-simulation.jpg" src="media/demonstration-simulation.mp4">
+          Your browser does not support embedded video.
+        </video>
+      </figure>
+      <figure class="overview-video">
+        <div class="overview-label"><h2>02 / Demonstration – Real World</h2></div>
+        <video class="overview-player" controls muted playsinline preload="metadata" poster="posters/demonstration-real-world.jpg" src="media/demonstration-real-world.mp4">
+          Your browser does not support embedded video.
+        </video>
+      </figure>
+    </section>
+
+    <section id="comparisons" class="comparisons" aria-labelledby="comparison-heading">
+      <div class="comparison-intro container">
+        <h2 id="comparison-heading">03 / Comparative Test</h2>
+      </div>
+
+      <article id="low-friction" class="scene sync-group">
+        <div class="container">
+          <header class="scene-header">
+            <div><p class="scene-kicker">Low-friction surface</p><h3>Wet Corridor</h3></div>
+            <div class="scene-actions">
+              <button type="button" class="scene-button sync-play">Play together</button>
+              <button type="button" class="scene-button sync-reset">Reset</button>
+            </div>
+          </header>
+          <div class="video-grid pair-grid">
+            <figure class="comparison-video">
+              <video controls muted playsinline preload="metadata" poster="posters/friction-agile.jpg" src="media/friction-agile.mp4"></video>
+              <figcaption>ABS (Agile)</figcaption>
+            </figure>
+            <figure class="comparison-video proposed">
+              <video controls muted playsinline preload="metadata" poster="posters/friction-recast.jpg" src="media/friction-recast.mp4"></video>
+              <figcaption>ReCAST-RL</figcaption>
+            </figure>
+          </div>
+          <p class="scene-status" role="status" aria-live="polite"></p>
+        </div>
+      </article>
+
+      <article id="slopes" class="scene sync-group">
+        <div class="container">
+          <header class="scene-header">
+            <div><p class="scene-kicker">Outdoor slope</p><h3>Brick Ascent</h3></div>
+            <div class="scene-actions">
+              <button type="button" class="scene-button sync-play">Play together</button>
+              <button type="button" class="scene-button sync-reset">Reset</button>
+            </div>
+          </header>
+          <div class="video-grid pair-grid">
+            <figure class="comparison-video">
+              <video controls muted playsinline preload="metadata" poster="posters/slope-brick-agile.jpg" src="media/slope-brick-agile.mp4"></video>
+              <figcaption>ABS (Agile)</figcaption>
+            </figure>
+            <figure class="comparison-video proposed">
+              <video controls muted playsinline preload="metadata" poster="posters/slope-brick-recast.jpg" src="media/slope-brick-recast.mp4"></video>
+              <figcaption>ReCAST-RL</figcaption>
+            </figure>
+          </div>
+          <p class="scene-status" role="status" aria-live="polite"></p>
+        </div>
+      </article>
+
+      <article class="scene sync-group">
+        <div class="container">
+          <header class="scene-header">
+            <div><p class="scene-kicker">Outdoor slope</p><h3>Grass Ascent</h3></div>
+            <div class="scene-actions">
+              <button type="button" class="scene-button sync-play">Play together</button>
+              <button type="button" class="scene-button sync-reset">Reset</button>
+            </div>
+          </header>
+          <div class="video-grid pair-grid">
+            <figure class="comparison-video">
+              <video controls muted playsinline preload="metadata" poster="posters/slope-grass-up-agile.jpg" src="media/slope-grass-up-agile.mp4"></video>
+              <figcaption>ABS (Agile)</figcaption>
+            </figure>
+            <figure class="comparison-video proposed">
+              <video controls muted playsinline preload="metadata" poster="posters/slope-grass-up-recast.jpg" src="media/slope-grass-up-recast.mp4"></video>
+              <figcaption>ReCAST-RL</figcaption>
+            </figure>
+          </div>
+          <p class="scene-status" role="status" aria-live="polite"></p>
+        </div>
+      </article>
+
+      <article class="scene sync-group">
+        <div class="container">
+          <header class="scene-header">
+            <div><p class="scene-kicker">Outdoor slope</p><h3>Grass Descent</h3></div>
+            <div class="scene-actions">
+              <button type="button" class="scene-button sync-play">Play together</button>
+              <button type="button" class="scene-button sync-reset">Reset</button>
+            </div>
+          </header>
+          <div class="video-grid pair-grid">
+            <figure class="comparison-video">
+              <video controls muted playsinline preload="metadata" poster="posters/slope-grass-down-agile.jpg" src="media/slope-grass-down-agile.mp4"></video>
+              <figcaption>ABS (Agile)</figcaption>
+            </figure>
+            <figure class="comparison-video proposed">
+              <video controls muted playsinline preload="metadata" poster="posters/slope-grass-down-recast.jpg" src="media/slope-grass-down-recast.mp4"></video>
+              <figcaption>ReCAST-RL</figcaption>
+            </figure>
+          </div>
+          <p class="scene-status" role="status" aria-live="polite"></p>
+        </div>
+      </article>
+
+      <article id="payloads" class="scene sync-group">
+        <div class="container">
+          <header class="scene-header">
+            <div><p class="scene-kicker">Added payload</p><h3>6 kg Corridor</h3></div>
+            <div class="scene-actions">
+              <button type="button" class="scene-button sync-play">Play together</button>
+              <button type="button" class="scene-button sync-reset">Reset</button>
+            </div>
+          </header>
+          <div class="video-grid pair-grid">
+            <figure class="comparison-video">
+              <video controls muted playsinline preload="metadata" poster="posters/payload-6kg-agile.jpg" src="media/payload-6kg-agile.mp4"></video>
+              <figcaption>ABS (Agile)</figcaption>
+            </figure>
+            <figure class="comparison-video proposed">
+              <video controls muted playsinline preload="metadata" poster="posters/payload-6kg-recast.jpg" src="media/payload-6kg-recast.mp4"></video>
+              <figcaption>ReCAST-RL</figcaption>
+            </figure>
+          </div>
+          <p class="scene-status" role="status" aria-live="polite"></p>
+        </div>
+      </article>
+
+      <article class="scene sync-group">
+        <div class="container">
+          <header class="scene-header">
+            <div><p class="scene-kicker">Added payload</p><h3>9 kg Corridor</h3></div>
+            <div class="scene-actions">
+              <button type="button" class="scene-button sync-play">Play together</button>
+              <button type="button" class="scene-button sync-reset">Reset</button>
+            </div>
+          </header>
+          <div class="video-grid pair-grid">
+            <figure class="comparison-video">
+              <video controls muted playsinline preload="metadata" poster="posters/payload-9kg-agile.jpg" src="media/payload-9kg-agile.mp4"></video>
+              <figcaption>ABS (Agile)</figcaption>
+            </figure>
+            <figure class="comparison-video proposed">
+              <video controls muted playsinline preload="metadata" poster="posters/payload-9kg-recast.jpg" src="media/payload-9kg-recast.mp4"></video>
+              <figcaption>ReCAST-RL</figcaption>
+            </figure>
+          </div>
+          <p class="scene-status" role="status" aria-live="polite"></p>
+        </div>
+      </article>
+
+      <article id="stress-tests" class="scene">
+        <div class="container">
+          <header class="scene-header">
+            <div><p class="scene-kicker">Additional trials</p><h3>Stress Tests</h3></div>
+          </header>
+          <div class="video-grid triple-grid">
+            <figure class="comparison-video proposed">
+              <video controls muted playsinline preload="metadata" poster="posters/payload-3kg-dense-recast.jpg" src="media/payload-3kg-dense-recast.mp4"></video>
+              <figcaption>Dense Obstacles · 3 kg</figcaption>
+            </figure>
+            <figure class="comparison-video proposed">
+              <video controls muted playsinline preload="metadata" poster="posters/payload-3kg-clutter-recast.jpg" src="media/payload-3kg-clutter-recast.mp4"></video>
+              <figcaption>Cluttered Ground · 3 kg</figcaption>
+            </figure>
+            <figure class="comparison-video proposed">
+              <video controls muted playsinline preload="metadata" poster="posters/payload-shift-recast.jpg" src="media/payload-shift-recast.mp4"></video>
+              <figcaption>Payload Shift · 9 kg to 6 kg</figcaption>
+            </figure>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <span>ReCAST-RL · Supplementary Videos</span>
+    <a href="#top">Back to top</a>
+  </footer>
+</body>
+</html>
